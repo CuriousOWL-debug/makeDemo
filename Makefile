@@ -8,3 +8,6 @@ OBJ = hellomake.o hellofunc.o
 
 hellomake: $(OBJ)
 	$(CC) -o $@ $^ $(CFLAGS)
+
+clean:
+	rm -f $(OBJ) hellomake 
